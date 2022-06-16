@@ -1,0 +1,31 @@
+{
+  "name": "drew-bot",
+  "version": "1.0.0",
+  "description": "A discord bot leveraging discord.js to provide information about Dislyte characters and builds.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianfanndev/drew-bot.git"
+  },
+  "keywords": [
+    "discordjs",
+    "discord",
+    "bot"
+  ],
+  "author": "Brian Fann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianfanndev/drew-bot/issues"
+  },
+  "homepage": "https://github.com/brianfanndev/drew-bot#readme",
+  "dependencies": {
+    "@discordjs/rest": "^0.5.0",
+    "axios": "^0.27.2",
+    "discord.js": "^13.8.0",
+    "jsdom": "^19.0.0"
+  }
+}
