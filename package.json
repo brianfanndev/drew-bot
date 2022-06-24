@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "A discord bot leveraging discord.js to provide information about Dislyte characters and builds.",
   "main": "app.js",
+  "type": "module",
   "scripts": {
-    "start": "node src/bot.js",
-    "deploy-commands": "node src/deploy-commands.js",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node src/app.mjs",
+    "deploy-commands": "node --experimental-modules --es-module-specifier-resolution=node src/deploy-commands.js",
     "test": "test"
   },
   "repository": {
@@ -30,7 +31,8 @@
     "discord-api-types": "^0.34.0",
     "discord.js": "^13.8.0",
     "dotenv": "^16.0.1",
-    "jsdom": "^19.0.0"
+    "jsdom": "^19.0.0",
+    "redis": "^4.1.0"
   },
   "devDependencies": {
     "eslint": "^8.18.0",
